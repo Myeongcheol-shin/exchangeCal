@@ -8,19 +8,24 @@ android {
 
     defaultConfig {
         applicationId "com.shino72.exchangecal"
-        minSdk 21
+        minSdk 26
         targetSdk 32
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-
+    dataBinding {
+        enabled = true
+    }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+    buildFeatures {
+        viewBinding = true
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -32,6 +37,19 @@ android {
 }
 
 dependencies {
+    // dropsy : jitpack
+    implementation 'com.github.qandeelabbassi:Dropsy:1.1'
+
+    implementation 'androidx.databinding:databinding-runtime:4.2.2'
+    def lifecycle_version = "2.5.1"
+
+    implementation 'androidx.activity:activity-ktx:1.2.0'
+
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+
     // retrofit2
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'

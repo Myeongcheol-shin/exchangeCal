@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dropdown_items">
+        <item>----선택해주세요----</item>
+        <item>한국 원</item>
+        <item>미국 달러</item>
+        <item>아랍에미리트 디르함</item>
+        <item>호주 달러</item>
+        <item>바레인 디나르</item>
+        <item>브루나이 달러</item>
+        <item>캐나다 달러</item>
+        <item>덴마아크 크로네</item>
+        <item>유로</item>
+        <item>영국 파운드</item>
+        <item>인도네시아 루피아</item>
+        <item>일본 옌</item>
+        <item>노르웨이 크로네</item>
+        <item>뉴질랜드 달러</item>
+        <item>사우디 리얄</item>
+        <item>스웨덴 크로나</item>
+        <item>싱가포르 달러</item>
+        <item>태국 바트</item>
+    </string-array>
+</resources>

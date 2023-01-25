@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">exchangeCal</string>
+    <string name="status">기준</string>
 </resources>
