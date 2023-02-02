@@ -1,4 +1,4 @@
-# exchangeCal
+# exchangeCal App
 Android Application [Kotlin]
 
 # 앱 소개
